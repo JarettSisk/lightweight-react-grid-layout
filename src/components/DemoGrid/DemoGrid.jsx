@@ -9,16 +9,16 @@ export const DemoGrid = (props) => {
             <h3>Basic Grid</h3>
             <GridContainer padding={8}>
                 <GridItem xs={8}>
-                    <div className={"content"}>Content 1</div>
+                    <div className={"content"}>1</div>
                 </GridItem>
                 <GridItem xs={4}>
-                    <div className={"content"}>Content 2</div>
+                    <div className={"content"}>2</div>
                 </GridItem>
                 <GridItem xs={4}>
-                    <div className={"content"}>Content 3</div>
+                    <div className={"content"}>3</div>
                 </GridItem>
                 <GridItem xs={8}>
-                    <div className={"content"}>Content 3</div>
+                    <div className={"content"}>3</div>
                 </GridItem>
             </GridContainer>
             <div className={"spacer"}/>
