@@ -1,1 +1,15 @@
+:root {
+    --font-color-1: #ffffff;
+    --font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 
+}
+
+body {
+    background-color: rgba(28, 33, 37, 0.91);
+    font-family: var(--font-family);
+}
+
+h3 {
+    color: var(--font-color-1);
+    text-align: center;
+}

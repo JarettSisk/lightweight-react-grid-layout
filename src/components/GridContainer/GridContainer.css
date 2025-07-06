@@ -1,0 +1,6 @@
+
+/* I dont really like styling all div children,but this seems to help divs that are placed inside grid items from
+overflowing outside of the grid item bounds */
+.grid-container div {
+    box-sizing: border-box;
+}

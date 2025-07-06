@@ -16,9 +16,6 @@ export const GridContainer = (props) => {
     const containerStyle = {
         display: 'flex',
         flexWrap: 'wrap',
-        border: "1px solid black",
-        borderRadius: 5,
-        backgroundColor: "#f3eefd",
         gap,
         '--grid-gap': gap,
         justifyContent,
