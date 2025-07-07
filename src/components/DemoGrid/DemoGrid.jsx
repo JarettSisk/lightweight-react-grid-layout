@@ -107,7 +107,7 @@ export const DemoGrid = (props) => {
             <h3>Images</h3>
             <GridContainer padding={8}>
                 <GridItem xs={12} md={6} lg={3}>
-                    <img src={"./public/images/sumup-BxGwoyze2K4-unsplash.jpg"}/>
+                    <img src={"./public/images/master-unknown-MZGvBu4LQEg-unsplash (1).jpg"}/>
                 </GridItem>
                 <GridItem xs={12} md={6} lg={3}>
                     <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
