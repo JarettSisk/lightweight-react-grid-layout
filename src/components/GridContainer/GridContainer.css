@@ -25,4 +25,6 @@ overflowing outside of the grid item bounds */
 .grid-container svg {
     max-width: 100%;
     height: 100%;
+    object-fit: cover; /* Keeps original size, clips if too big */
+    object-position: center;
 }
