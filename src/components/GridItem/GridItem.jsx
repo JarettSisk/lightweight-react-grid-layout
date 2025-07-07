@@ -24,7 +24,7 @@ export const GridItem = ({
                              ...props
                          }) => {
     const classes = [
-        'grid-item-flex',
+        'grid-item',
         xs && `xs-${xs}`,
         sm && `sm-${sm}`,
         md && `md-${md}`,
