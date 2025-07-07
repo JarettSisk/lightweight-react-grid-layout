@@ -1,6 +1,28 @@
 
-/* I dont really like styling all div children,but this seems to help divs that are placed inside grid items from
+/* I dont really like styling all children of type/s, but this seems to help divs/etc that are placed inside grid items from
 overflowing outside of the grid item bounds */
-.grid-container div {
+.grid-container div,
+.grid-container img,
+.grid-container video,
+.grid-container canvas,
+.grid-container iframe,
+.grid-container object,
+.grid-container embed,
+.grid-container svg,
+.grid-container pre,
+.grid-container code,
+.grid-container table {
     box-sizing: border-box;
+}
+
+/* Additional overflow protection for media elements */
+.grid-container img,
+.grid-container video,
+.grid-container canvas,
+.grid-container iframe,
+.grid-container object,
+.grid-container embed,
+.grid-container svg {
+    max-width: 100%;
+    height: auto;
 }

@@ -1,3 +1,7 @@
+:root {
+    --grid-gap: 0px; /* gets set to tha passed in prop value upon the component being loaded */
+}
+
 .grid-item {
     min-width: 0;
 }

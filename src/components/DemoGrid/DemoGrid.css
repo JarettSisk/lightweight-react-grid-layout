@@ -3,6 +3,7 @@
 }
 .content {
     /*border: 2px solid black;*/
+    height: 100%;
     background-color: #005055;
     text-align: center;
     padding: 8px;
