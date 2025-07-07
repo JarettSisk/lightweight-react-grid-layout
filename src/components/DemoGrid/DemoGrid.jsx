@@ -34,7 +34,7 @@ export const DemoGrid = (props) => {
                     <div className={"content"}>3</div>
                 </GridItem>
                 <GridItem xs={8}>
-                    <p className={"content"}>3</p>
+                    <p className={"content"}>4</p>
                 </GridItem>
             </GridContainer>
             <div className={"spacer"}/>
