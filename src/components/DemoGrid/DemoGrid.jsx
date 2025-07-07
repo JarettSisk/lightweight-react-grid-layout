@@ -1,8 +1,24 @@
 import {GridContainer} from "../GridContainer/GridContainer.jsx";
 import {GridItem} from "../GridItem/GridItem.jsx";
 import "./DemoGrid.css"
+import {useState} from "react";
 
+/**
+ * A demo component showcasing various grid layout examples and configurations.
+ * @param {Object} props - Component props
+ * @returns {JSX.Element} Rendered demo grid with interactive examples
+ */
 export const DemoGrid = (props) => {
+
+    const [alignment, setAlignment] = useState("center");
+
+    /**
+     * Handles alignment change from radio button selection
+     * @param {Event} e - Change event from radio input
+     */
+    const handleChangeAlignment = (e) => {
+        setAlignment(e.target.value);
+    }
 
     return (
         <div className={"demo-grid"}>
@@ -89,17 +105,85 @@ export const DemoGrid = (props) => {
             </GridContainer>
             <div className={"spacer"}/>
             <h3>Alignment</h3>
-            <GridContainer padding={8} justifyContent={"end"}>
-                <GridItem xs={12} md={2}>
+            <div className={"button-group"}>
+                <label>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="flex-start"
+                        checked={alignment === "flex-start"}
+                        onChange={handleChangeAlignment}
+                    />
+                    Start
+                </label>
+                <label style={{marginLeft: "16px"}}>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="center"
+                        checked={alignment === "center"}
+                        onChange={handleChangeAlignment}
+                    />
+                    Center
+                </label>
+                <label style={{marginLeft: "16px"}}>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="flex-end"
+                        checked={alignment === "flex-end"}
+                        onChange={handleChangeAlignment}
+                    />
+                    End
+                </label>
+                <label style={{marginLeft: "16px"}}>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="space-between"
+                        checked={alignment === "space-between"}
+                        onChange={handleChangeAlignment}
+                    />
+                    Space Between
+                </label>
+                <label style={{marginLeft: "16px"}}>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="space-around"
+                        checked={alignment === "space-around"}
+                        onChange={handleChangeAlignment}
+                    />
+                    Space Around
+                </label>
+                <label style={{marginLeft: "16px"}}>
+                    <input
+                        className={"radio-button-input"}
+                        type="radio"
+                        name="alignment"
+                        value="space-evenly"
+                        checked={alignment === "space-evenly"}
+                        onChange={handleChangeAlignment}
+                    />
+                    Space Evenly
+                </label>
+            </div>
+            <GridContainer padding={8} justifyContent={alignment}>
+                <GridItem xs={4} md={2}>
                     <div className={"content"}>1</div>
                 </GridItem>
-                <GridItem xs={2}>
+                <GridItem xs={4} md={2}>
                     <div className={"content"}>2</div>
                 </GridItem>
-                <GridItem xs={12} md={2}>
+                <GridItem xs={4} md={2}>
                     <div className={"content"}>3</div>
                 </GridItem>
-                <GridItem xs={2}>
+                <GridItem xs={4} md={2}>
                     <div className={"content"}>4</div>
                 </GridItem>
             </GridContainer>
