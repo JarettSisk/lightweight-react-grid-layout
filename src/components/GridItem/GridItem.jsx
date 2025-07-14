@@ -35,8 +35,8 @@ export const GridItem = ({
 
     return (
         <div
-            className={classes}
             {...props}
+            className={classes}
         >
             {children}
         </div>

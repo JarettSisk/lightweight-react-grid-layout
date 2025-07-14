@@ -35,13 +35,14 @@ export const GridContainer = (props) => {
         alignItems,
         flexDirection,
         padding,
+        ...props.style,
     };
 
     return (
         <div
+            {...otherProps}
             style={containerStyle}
             className={`grid-container ${className}`}
-            {...otherProps}
         >
             {children}
         </div>
