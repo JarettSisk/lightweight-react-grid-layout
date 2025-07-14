@@ -18,7 +18,7 @@ export const GridContainer = (props) => {
         children,
         className = "",
         gap = "8px",
-        justifyContent = "center",
+        justifyContent = "stretch",
         alignItems = "stretch",
         flexDirection = "row",
         padding = "0",
