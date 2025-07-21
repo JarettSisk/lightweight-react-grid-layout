@@ -207,7 +207,7 @@ export const DemoGrid = (props) => {
             <h3>Cards</h3>
             <GridContainer padding={8}>
                 <GridItem xs={12} md={4}>
-                    <GridContainer flexDirection={"column"} alignItems={"center"}>
+                    <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
                             <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
                         </GridItem>
@@ -236,7 +236,7 @@ export const DemoGrid = (props) => {
                     </GridContainer>
                 </GridItem>
                 <GridItem xs={12} md={4}>
-                    <GridContainer flexDirection={"column"} alignItems={"center"}>
+                    <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
                             <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
                         </GridItem>
@@ -258,7 +258,7 @@ export const DemoGrid = (props) => {
                     </GridContainer>
                 </GridItem>
                 <GridItem xs={12} md={4}>
-                    <GridContainer flexDirection={"column"} alignItems={"center"}>
+                    <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
                             <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
                         </GridItem>
