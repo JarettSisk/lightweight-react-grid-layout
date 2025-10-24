@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # deploy on push to main branch
+    workflow_dispatch:  # allows manual trigger via button
 
 jobs:
   deploy:
