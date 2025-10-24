@@ -2,6 +2,7 @@ import {GridContainer} from "../GridContainer/GridContainer.jsx";
 import {GridItem} from "../GridItem/GridItem.jsx";
 import "./DemoGrid.css"
 import {useState} from "react";
+import stockImage from "../../assets/images/stockImage.jpg"
 
 /**
  * A demo component showcasing various grid layout examples and configurations.
@@ -191,16 +192,16 @@ export const DemoGrid = (props) => {
             <h3>Images</h3>
             <GridContainer padding={8}>
                 <GridItem xs={12} md={6} lg={3}>
-                    <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                    <img src={stockImage}/>
                 </GridItem>
                 <GridItem xs={12} md={6} lg={3}>
-                    <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                    <img src={stockImage}/>
                 </GridItem>
                 <GridItem xs={12} md={6} lg={3}>
-                    <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                    <img src={stockImage}/>
                 </GridItem>
                 <GridItem xs={12} md={6} lg={3}>
-                    <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                    <img src={stockImage}/>
                 </GridItem>
             </GridContainer>
             <div className={"spacer"}/>
@@ -209,7 +210,7 @@ export const DemoGrid = (props) => {
                 <GridItem xs={12} md={4}>
                     <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
-                            <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                            <img src={stockImage}/>
                         </GridItem>
                         <GridItem style={{flex: 1}} xs={12}>
                             <div className={"content"}>
@@ -238,7 +239,7 @@ export const DemoGrid = (props) => {
                 <GridItem xs={12} md={4}>
                     <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
-                            <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                            <img src={stockImage}/>
                         </GridItem>
                         <GridItem xs={12} style={{flex: 1}}>
                             <div className={"content"}>
@@ -260,7 +261,7 @@ export const DemoGrid = (props) => {
                 <GridItem xs={12} md={4}>
                     <GridContainer flexDirection={"column"} alignItems={"center"} style={{height: "100%"}}>
                         <GridItem xs={12}>
-                            <img src={"./public/images/vika-strawberrika-NFvN4Sx3-VQ-unsplash (1).jpg"}/>
+                            <img src={stockImage}/>
                         </GridItem>
                         <GridItem xs={12} style={{flex: 1}}>
                             <div className={"content"}>
